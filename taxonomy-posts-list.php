@@ -17,9 +17,9 @@ class BPDev_Taxonomy_Posts_List_Helper {
     private function __construct() {
         
         //use any of the three shortcodes, each have same purpose
-        add_shortcode('category_toc', array( $this, 'generate_toc'));
-        add_shortcode('term_toc', array( $this, 'generate_toc'));
-        add_shortcode('taxonomy-posts-list', array( $this, 'generate_toc'));
+        add_shortcode( 'category_toc', array( $this, 'generate_toc' ) );
+        add_shortcode( 'term_toc', array( $this, 'generate_toc' ) );
+        add_shortcode( 'taxonomy-posts-list', array( $this, 'generate_toc' ) );
         
     }
     
