@@ -70,8 +70,11 @@ class BPDev_Taxonomy_Posts_List_Helper {
 		//if post type is not attachment, and the term_id and term is not given, then we will get it from the current post
 		if ( ! $term_id && ! $term && $post_type != 'attachment' ) {
 			$terms   = get_the_terms( get_the_ID(), $taxonomy );
-			$terms   = array_values( $terms );
-			$term_id = $terms[0]->term_id;
+
+			if ( ! empty( $terms )  && ! is_wp_error( $terms ) ) {
+				$terms   = array_values( $terms );
+				$term_id = $terms[0]->term_id;
+			}
 		}
 
 		if ( ! $term_id && $term ) {
