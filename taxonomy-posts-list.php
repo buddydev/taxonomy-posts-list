@@ -13,7 +13,7 @@
  */
 class BPDev_Taxonomy_Posts_List_Helper {
 
-	private static $instanace;
+	private static $instance;
 
 	private function __construct() {
 
@@ -30,11 +30,11 @@ class BPDev_Taxonomy_Posts_List_Helper {
 	 */
 	public static function get_instance() {
 
-		if ( ! isset ( self::$instanace ) ) {
-			self::$instanace = new self();
+		if ( ! isset ( self::$instance ) ) {
+			self::$instance = new self();
 		}
 
-		return self::$instanace;
+		return self::$instance;
 
 	}
 
