@@ -5,7 +5,7 @@
  * Version: 1.0.1
  * Author: BuddyDev
  * Author URI: https://buddydev.com/
- * Description: Generates List of posts for a perticular term/post type
+ * Description: Generates List of posts for a particular term/post type
  */
 
 /**
